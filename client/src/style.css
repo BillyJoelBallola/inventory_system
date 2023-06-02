@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.side-margin{
+    max-width: 85%;
+    margin-inline: auto;
+}
+
+@media (max-width: 720px) {
+    .side-margin{
+        max-width: 90%;
+    }    
+}
+
+@media (max-width: 460px) {
+    .side-margin{
+        max-width: 95%;
+    }    
+}
+
+.active{
+    color: rgb(0, 145, 150);
+}
+
+.btn-primary{
+    border: 2px solid transparent;
+    background: #212121;
+    color: #fff;
+    border-radius: 5px;
+    padding-inline: 1rem;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-primary:hover{
+    border-color: #212121;
+    background: transparent;
+    color: #212121;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    @apply border rounded-md py-1 px-2
+}
